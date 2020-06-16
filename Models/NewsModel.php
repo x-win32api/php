@@ -19,7 +19,6 @@ class News extends BaseDbModel
     {
         $dbh = new Db;
         $sql = 'SELECT * FROM ' . static::TABLE .' ORDER BY id DESC LIMIT ' . $count;
-        print $sql;
         $query = $dbh->query($sql);
         $query->setFetchMode(\PDO::FETCH_CLASS, static::class);
         return $query->fetchAll();

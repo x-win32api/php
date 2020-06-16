@@ -39,7 +39,6 @@ class BaseDbModel
     {
         $dbh = new Db;
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id = :id';
-        print $sql;
         return $dbh->execute($sql, ['id' => $id]);
 
     # DELETE FROM articles WHERE id = :id; 

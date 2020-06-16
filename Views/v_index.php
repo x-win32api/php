@@ -10,7 +10,7 @@
     <? if(!empty($lastNews)): ?>
 
         <? foreach ($lastNews as $news) : ?>
-            <a href='<?=$news->id?>'><h2><?=$news->title;?></h2></a>
+            <a href='./news.php?id=<?=$news->id?>'><h2><?=$news->title;?></h2></a>
             <p><?=$news->content;?></p>    
         <? endforeach; ?>
 
