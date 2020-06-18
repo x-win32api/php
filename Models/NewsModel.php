@@ -15,7 +15,7 @@ class News extends BaseDbModel
     * @param - количество выводимых записей
     * @return массив обьектов класса
     */
-    static function findLastNews(int $count): array
+    public static function findLastNews(int $count): array
     {
         $dbh = new Db;
         $sql = 'SELECT * FROM ' . static::TABLE .' ORDER BY id DESC LIMIT ' . $count;

@@ -6,7 +6,7 @@ class Db
 {
       protected $db;
 
-      function __construct()
+      public function __construct()
      {
         # кофиг с настройками подключения
          require(__DIR__.'/../config.php');
