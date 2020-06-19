@@ -17,12 +17,9 @@ class News extends BaseDbModel
     */
     public static function findLastNews(int $count): array
     {
-        $dbh = new Db;
+        $dbh = new \Db;
         $sql = 'SELECT * FROM ' . static::TABLE .' ORDER BY id DESC LIMIT ' . $count;
-        $query = $dbh->query($sql);
-        $query->setFetchMode(\PDO::FETCH_CLASS, static::class);
-        return $query->fetchAll();
-
+        return $dbh->query($sql, static::class);
     # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 

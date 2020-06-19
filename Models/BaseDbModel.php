@@ -2,7 +2,6 @@
 
 namespace Models;
 
-use Classes\Db\Db;
 
 class BaseDbModel
 {
@@ -20,29 +19,24 @@ class BaseDbModel
     *  Вывод всех записей
     * @return array - массив обьектов класса
     */
-    public static function getAll(): array
+    public static function getAll() : object
     {
-        $dbh = new Db;
+        $db = new \Db();
         $sql = 'SELECT * FROM ' . static::TABLE;
-        $query = $dbh->query($sql);
-        $query->setFetchMode(\PDO::FETCH_CLASS, static::class);
-        return $query->fetchAll();
-
+        return $db->query($sql, static::class);
     # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
     /**
     *  Поиск одной записи
     * @param - (int)ID-записи
-    * @return обьект класса
+    * @return обьект класса / false
     */
     public static function findById(int $id)
     {
-        $dbh = new Db;
+        $db = new \Db();
         $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE id = :id';
-        $sth = $dbh->query($sql, ['id' => $id]);
-        $sth->setFetchMode(\PDO::FETCH_CLASS, static::class);
-        return $sth->fetch();
-
+        $result = $db->query($sql, static::class, ['id' => $id]);
+        return ($result) ? $result[0] : false;
     }
 }

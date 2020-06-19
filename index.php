@@ -3,7 +3,7 @@
 use Models\News;
 use Models\Product;
 
-include 'Classes/Db/Db.php';
+include 'Db.php';
 include 'Models/BaseDbModel.php';
 include 'Models/NewsModel.php';
 include 'Models/ProductModel.php';
