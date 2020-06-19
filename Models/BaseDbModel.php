@@ -5,21 +5,11 @@ namespace Models;
 
 class BaseDbModel
 {
-    /**
-    * @var имя класса = имя таблицы бд, задается в классе наследнике
-    */
+
     protected const TABLE = '';
-    
-    /**
-    * @var id записи
-    */
     public $id;
 
-    /**
-    *  Вывод всех записей
-    * @return array - массив обьектов класса
-    */
-    public static function getAll() : object
+    public static function getAll() 
     {
         $db = new \Db();
         $sql = 'SELECT * FROM ' . static::TABLE;
@@ -27,11 +17,6 @@ class BaseDbModel
     # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
-    /**
-    *  Поиск одной записи
-    * @param - (int)ID-записи
-    * @return обьект класса / false
-    */
     public static function findById(int $id)
     {
         $db = new \Db();

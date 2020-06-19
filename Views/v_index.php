@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <? if(!empty($lastNews)): ?>
+    <?php if(!empty($lastNews)): ?>
 
         <? foreach ($lastNews as $news) : ?>
             <a href='./news.php?id=<?=$news->id?>'><h2><?=$news->title;?></h2></a>

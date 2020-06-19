@@ -1,7 +1,6 @@
 <?php
 
 use Models\News;
-use Models\Product;
 
 include 'Db.php';
 include 'Models/BaseDbModel.php';

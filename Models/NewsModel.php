@@ -9,12 +9,8 @@ class News extends BaseDbModel
     public $title;
     public $content;
     public $category;
+    static $lol;
 
-    /**
-    *  Класс для вывода последних новостей
-    * @param - количество выводимых записей
-    * @return массив обьектов класса
-    */
     public static function findLastNews(int $count): array
     {
         $dbh = new \Db;
