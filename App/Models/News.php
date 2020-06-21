@@ -1,7 +1,6 @@
 <?
-namespace Models;
+namespace App\Models;
 
-use Classes\Db\Db;
 
 class News extends BaseDbModel
 {
@@ -9,7 +8,6 @@ class News extends BaseDbModel
     public $title;
     public $content;
     public $category;
-    static $lol;
 
     public static function findLastNews(int $count): array
     {
@@ -19,6 +17,9 @@ class News extends BaseDbModel
     # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
+    public function Test(){
+        print 'lol';
+    }
 }
 
 

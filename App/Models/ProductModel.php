@@ -1,5 +1,5 @@
 <?
-namespace Models;
+namespace App\Models;
 
 class Product extends BaseDbModel
 {

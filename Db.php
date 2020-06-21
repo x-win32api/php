@@ -1,19 +1,22 @@
 <?php
 
 
-class Db 
+use App\Config\Config;
+
+class Db
 {
       protected $dbh;
 
       public function __construct()
      {
-        $config = require_once(__DIR__.'/config.php');
+         $config = Config::getInstance();
 
         if($this->dbh === null){
-          $this->dbh = new \PDO('mysql:host=' . $config['db']['host'] .';dbname=' . $config['db']['dbname'] . '', $config['db']['user'], '');
+            $this->dbh = new PDO('mysql:host=' . $config->data['db']['host'] .';dbname=' . $config->data['db']['dbname'] . '', $config->data['db']['user'], '');
         }
     }
-   
+
+
     public function query(string $sql, $class, array $params = [])
     {
         $sth = $this->dbh->prepare($sql);
@@ -25,6 +28,11 @@ class Db
     {
         $sth = $this->dbh->prepare($sql); 
         return $sth->execute($params);
+    }
+
+    public function lastId()
+    {
+        return $this->dbh->lastInsertId();
     }
 
 
