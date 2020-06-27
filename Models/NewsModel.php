@@ -1,7 +1,6 @@
-<?
-namespace Models;
+<?php
 
-use Classes\Db\Db;
+namespace Models;
 
 class News extends BaseDbModel
 {
@@ -14,14 +13,12 @@ class News extends BaseDbModel
     public static function findLastNews(int $count): array
     {
         $dbh = new \Db;
-        $sql = 'SELECT * FROM ' . static::TABLE .' ORDER BY id DESC LIMIT ' . $count;
+        $sql = 'SELECT * FROM ' . static::TABLE . ' ORDER BY id DESC LIMIT ' . $count;
         return $dbh->query($sql, static::class);
-    # SELECT * FROM users ORDER BY id DESC LIMIT 10
+        # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
 }
-
-
 
 
 ?>

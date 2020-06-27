@@ -9,12 +9,12 @@ class BaseDbModel
     protected const TABLE = '';
     public $id;
 
-    public static function getAll() 
+    public static function getAll()
     {
         $db = new \Db();
         $sql = 'SELECT * FROM ' . static::TABLE;
         return $db->query($sql, static::class);
-    # SELECT * FROM users ORDER BY id DESC LIMIT 10
+        # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
     public static function findById(int $id)

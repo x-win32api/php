@@ -1,38 +1,32 @@
 <?php
 
 
-class Db 
+class Db
 {
-      protected $dbh;
+    protected PDO $dbh;
 
-      public function __construct()
-     {
-        $config = require_once(__DIR__.'/config.php');
+    public function __construct()
+    {
+        $config = require_once(__DIR__ . '/config.php');
 
-        if($this->dbh === null){
-          $this->dbh = new \PDO('mysql:host=' . $config['db']['host'] .';dbname=' . $config['db']['dbname'] . '', $config['db']['user'], '');
-        }
+        $this->dbh = new PDO('mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['dbname'] . '', $config['db']['user'], '');
     }
-   
+
     public function query(string $sql, $class, array $params = [])
     {
         $sth = $this->dbh->prepare($sql);
         $sth->execute($params);
-        return $sth->fetchAll(\PDO::FETCH_CLASS, $class);
+        return $sth->fetchAll(PDO::FETCH_CLASS, $class);
     }
 
-    public function execute(string $sql, array $params) 
+    public function execute(string $sql, array $params)
     {
-        $sth = $this->dbh->prepare($sql); 
+        $sth = $this->dbh->prepare($sql);
         return $sth->execute($params);
     }
 
 
 }
-
-
-
-
 
 
 ?>
