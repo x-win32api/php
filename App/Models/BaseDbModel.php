@@ -16,7 +16,7 @@ class BaseDbModel
         $db = new Db();
         $sql = 'SELECT * FROM ' . static::TABLE;
         return $db->query($sql, static::class);
-    # SELECT * FROM users ORDER BY id DESC LIMIT 10
+        # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
     public static function findById(int $id)
@@ -52,30 +52,35 @@ class BaseDbModel
         $data = [];
 
         foreach (get_object_vars($this) as $name => $value) {
+            $data[':' . $name] = $value;
             if ($name == 'id' || $name == 'dbh') {
                 continue;
             }
-            $params[] = $name.' = :'.$name;
-            $data[':' . $name] = $value;
+            $params[] = $name . ' = :' . $name;
+
         }
-        $sql = 'UPDATE ' . static::TABLE . ' SET ' . implode(',', $params) . ' WHERE id = '.$this->id;
+        $sql = 'UPDATE ' . static::TABLE . ' SET ' . implode(',', $params) . ' WHERE id = :id';
+        print $sql;
+        var_dump($data);
+
         $dbh = new Db;
         return $dbh->execute($sql, $data);
     }
 
-    public function save(){
+    public function save()
+    {
 
-        if(!isset($this->id)){
+        if (!isset($this->id)) {
 
             return $this->insert();
 
-        }else {
+        } else {
 
             return $this->update();
         }
     }
 
-    public function delete($id)
+    public static function delete($id)
     {
         $dbh = new Db;
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id = :id';

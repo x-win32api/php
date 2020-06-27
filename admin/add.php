@@ -1,29 +1,29 @@
 <?php
 
+require_once __DIR__ . '/../autoload.php';
 
-require_once __DIR__.'/../autoload.php';
 use App\Models\News;
 
 
-    if(isset($_POST['form_control'])){
+if (isset($_POST['form_control'])) {
 
-        $title = ($_POST['title']) ? $_POST['title'] : null;
-        $content = ($_POST['title']) ? $_POST['content'] : null;
+    $title = ($_POST['title']) ? $_POST['title'] : null;
+    $content = ($_POST['title']) ? $_POST['content'] : null;
 
-        if($title && $content){
-            $news = new News();
-            $news->title = $title;
-            $news->content = $content;
-            if($news->save()) {
+    if ($title && $content) {
+        $news = new News();
+        $news->title = $title;
+        $news->content = $content;
+        if ($news->save()) {
 
-                header('Location: ./edit.php?id='.$news->id);
-            }
+            header('Location: ./edit.php?id=' . $news->id);
         }
-    }else {
-
-        require_once(__DIR__ . '/../App/Views/v_edit_news.php');
-
     }
+} else {
+
+    require_once(__DIR__ . '/../App/Views/v_edit_news.php');
+
+}
 
 
 

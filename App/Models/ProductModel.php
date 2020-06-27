@@ -1,4 +1,5 @@
 <?
+
 namespace App\Models;
 
 class Product extends BaseDbModel
@@ -8,8 +9,6 @@ class Product extends BaseDbModel
     public $desk;
     public $price;
 }
-
-
 
 
 ?>

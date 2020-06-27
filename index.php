@@ -1,14 +1,23 @@
-<?
+<?php
 require_once __DIR__.'/autoload.php';
 
-use App\Models\Config;
 use App\Models\News;
+use App\Models\Views;
 
-# получаем последние новости 
-$lastNews = News::findLastNews(3);
+$views = new Views();
+$views->lastNews = News::findLastNews(3);
+print $views->render("v_index");
 
-# подключим шаблон
-require_once(__DIR__ . '/App/Views/v_index.php');
+
+
+
+
+
+
+
+
+
+
 
 
 

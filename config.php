@@ -3,7 +3,7 @@ return [
         'db' => [
         'host' => 'localhost',
         'user' => 'root',
-        'password' => '',
+        'password' => 'root',
         'dbname' => 'pr-of-it'
     ]
 ];

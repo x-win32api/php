@@ -8,6 +8,7 @@ class News extends BaseDbModel
     public $title;
     public $content;
     public $category;
+    public $author_id;
 
     public static function findLastNews(int $count): array
     {
@@ -17,9 +18,18 @@ class News extends BaseDbModel
     # SELECT * FROM users ORDER BY id DESC LIMIT 10
     }
 
-    public function Test(){
-        print 'lol';
+    public function __get($name){
+
+        if($name=='author'&&$this->author_id!=null){
+
+        return Author::findById($this->author_id);
+
+        }
+    //    print $name.'Не авторв<br>';
+
     }
+
+
 }
 
 

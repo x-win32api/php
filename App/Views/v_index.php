@@ -6,12 +6,14 @@
     <title>Вывод новостей</title>
 </head>
 <body>
-    
-    <?php if(!empty($lastNews)): ?>
 
+
+    <?php if(!empty($lastNews)): ?>
+    
         <? foreach ($lastNews as $news) : ?>
-            <a href='./news.php?id=<?=$news->id?>'><h2><?=$news->title;?></h2></a>
-            <p><?=$news->content;?></p>    
+            <a href='./article.php?id=<?=$news->id?>'><h2><?=$news->title;?></h2></a>
+            <p><?=$news->content;?></p>
+            <p><?=$news->author->name;?></p>
         <? endforeach; ?>
 
     <? else: ?>    
