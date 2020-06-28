@@ -17,6 +17,7 @@ if (isset($_POST['form_control'])) {
         if ($news->save()) {
 
             header('Location: ./edit.php?id=' . $news->id);
+            exit();
         }
     }
 } else {
