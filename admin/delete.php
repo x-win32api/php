@@ -8,7 +8,7 @@ $news = (isset($_GET['id'])) ? News::delete((int)$_GET['id']) : null;
 if ($news) {
 
     header('Location: ./index.php');
-
+    exit();
 }
 
 
