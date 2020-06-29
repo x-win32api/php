@@ -19,7 +19,7 @@ class Db
         return $sth->fetchAll(PDO::FETCH_CLASS, $class);
     }
 
-    public function execute(string $sql, array $params)
+    public function execute(string $sql, array $params = [])
     {
         $sth = $this->dbh->prepare($sql);
         return $sth->execute($params);
