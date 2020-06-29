@@ -2,9 +2,9 @@
 
 use Models\News;
 
-include 'Db.php';
-include 'Models/BaseDbModel.php';
-include 'Models/NewsModel.php';
+spl_autoload_register(function ($class) {
+    require __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';
+});
 
 # проверим пришел ли id и загрузим новость если все ок
 $article = (isset($_GET['id'])) ? News::findById((int)$_GET['id']) : null;
