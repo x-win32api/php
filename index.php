@@ -2,10 +2,7 @@
 
 use Models\News;
 
-include 'Db.php';
-include 'Models/BaseDbModel.php';
-include 'Models/NewsModel.php';
-include 'Models/ProductModel.php';
+require(__DIR__ . '/autoload.php');
 
 # получаем последние новости 
 $lastNews = News::findLastNews(3);
