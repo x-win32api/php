@@ -23,7 +23,7 @@
         <?php endforeach; ?>
         </select>
     <p><input type="submit" value="Сохранить"></p>
-    <p><a href="./index.php">Все статьи</a> | <a href="./delete.php?id=<?=$content->id?>">Удалить статью</a></p>
+    <p><a href="./index.php">Все статьи</a> | <a href="./index.php?ctrl=delete&id=<?=$content->id;?>">Удалить статью</a></p>
     </form>
 </body>
 </html>

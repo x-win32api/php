@@ -1,6 +1,7 @@
 <?php
 
 use App\Config;
+use Exceptions\DbExceptions;
 
 class Db
 {
@@ -9,7 +10,11 @@ class Db
     public function __construct()
     {
         $config = Config::getInstance();
-        $this->dbh = new PDO('mysql:host=' . $config->data['db']['host'] . ';dbname=' . $config->data['db']['dbname'] . '', $config->data['db']['user'], $config->data['db']['password']);
+        try {
+            $this->dbh = new PDO('mysql:host=' . $config->data['db']['host'] . ';dbname=' . $config->data['db']['dbname'] . '', $config->data['db']['user'], $config->data['db']['password']);
+        } catch (PDOException $e) {
+            throw new DbExceptions("Ошибка подключения.", '1', implode(":",$config->data['db']));
+        }
     }
 
     public function query(string $sql, $class, array $params = [])

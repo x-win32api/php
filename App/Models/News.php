@@ -27,8 +27,6 @@ class News extends BaseDbModel
             return Author::findById($this->author_id);
 
         }
-        //    print $name.'Не авторв<br>';
-
     }
 
 

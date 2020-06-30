@@ -6,5 +6,5 @@
       <path value="$PROJECT_DIR$/../../modules/php/PHP_7.3-x64/PEAR/pear" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
 </project>

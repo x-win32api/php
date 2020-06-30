@@ -60,8 +60,6 @@ class BaseDbModel
 
         }
         $sql = 'UPDATE ' . static::TABLE . ' SET ' . implode(',', $params) . ' WHERE id = :id';
-        print $sql;
-        var_dump($data);
 
         $dbh = new Db;
         return $dbh->execute($sql, $data);
