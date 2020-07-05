@@ -2,7 +2,7 @@
 
 function loadClass($classname)
 {
-    $filename = str_replace('\\', '/', $classname) . '.php';
+    $filename = str_replace('\\', '/', __DIR__.'/'.$classname) . '.php';
     include($filename);
 }
 
