@@ -23,6 +23,11 @@
         <?php endforeach; ?>
         </select>
     <p><input type="submit" value="Сохранить"></p>
+        <ul>
+        <?php foreach ($errors as $error) : ?>
+            <li><?=$error->getMessage();?></li>
+        <?php endforeach;?>
+        </ul>
     <p><a href="./index.php">Все статьи</a> | <a href="./index.php?ctrl=delete&id=<?=$content->id;?>">Удалить статью</a></p>
     </form>
 </body>

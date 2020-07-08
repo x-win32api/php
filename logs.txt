@@ -1,0 +1,65 @@
+
+[2020-07-08 10:26] 
+Level - info
+Message - Exceptions\DbExceptions : [0] : Ошибка при выполнении запроса 
+Строка: Разная информация
+#0 {main}
+
+[2020-07-08 10:31] 
+Level - warning
+Message - Exceptions\DbExceptions : [1] : Ошибка подключения.
+Строка: localhost:2root:root:pr-of-it
+#0 W:\domains\php.loc\App\Models\News.php(50): Db->__construct()
+#1 W:\domains\php.loc\App\Controllers\IndexController.php(13): App\Models\News::findLastNews()
+#2 W:\domains\php.loc\index.php(21): App\Controllers\IndexController->__invoke()
+#3 {main}
+
+[2020-07-08 10:33] 
+Level - warning
+Message - Exceptions\DbExceptions : [1] : Ошибка подключения.
+Строка: localhost:2root:root:pr-of-it
+#0 W:\domains\php.loc\App\Models\News.php(50): Db->__construct()
+#1 W:\domains\php.loc\App\Controllers\IndexController.php(13): App\Models\News::findLastNews()
+#2 W:\domains\php.loc\index.php(21): App\Controllers\IndexController->__invoke()
+#3 {main}
+
+[2020-07-08 10:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID 60
+#0 W:\domains\php.loc\index.php(21): App\Controllers\ArticleController->__invoke()
+#1 {main}
+
+[2020-07-08 10:34] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 60
+#0 W:\domains\php.loc\index.php(21): App\Controllers\ArticleController->__invoke()
+#1 {main}
+
+[2020-07-08 10:34] 
+Level - info
+Message - Exceptions\DbExceptions : [0] : Ошибка при выполнении запроса 
+Строка: Разная информация
+#0 {main}
+
+[2020-07-08 10:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 93
+#0 W:\domains\php.loc\index.php(21): App\Controllers\ArticleController->__invoke()
+#1 {main}
+
+[2020-07-08 10:36] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 93
+#0 W:\domains\php.loc\index.php(21): App\Controllers\ArticleController->__invoke()
+#1 {main}
+
+[2020-07-08 10:36] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 93
+#0 W:\domains\php.loc\index.php(21): App\Controllers\ArticleController->__invoke()
+#1 {main}

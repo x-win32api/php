@@ -20,8 +20,7 @@ class ArticleController extends BaseControllers
                 print $this->views->render(__DIR__ . '/../Views/v_news.php');
 
             } else {
-                throw new Err404Exceptions("Ошибка 404 страница не найдена!", '1', 'ID '.$_GET['id']);
-             //   print $this->views->render(__DIR__ . '/../Views/v_404.php');
+                throw new Err404Exceptions("Ошибка 404 страница не найдена!", '1', 'ID СТРАНИЦЫ: '.$_GET['id']);
             }
 
 

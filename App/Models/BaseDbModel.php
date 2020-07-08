@@ -4,6 +4,8 @@ namespace App\Models;
 
 
 use Db;
+use Exceptions\MultiExceptions;
+use Exceptions\ValidationErrors;
 
 class BaseDbModel
 {
@@ -83,5 +85,22 @@ class BaseDbModel
         $dbh = new Db;
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id = :id';
         return $dbh->execute($sql, ['id' => $id]);
+    }
+
+    public function fill(array $data){
+        $errorCollections = new MultiExceptions();
+        foreach ($data as $key => $value) {
+
+            $classMethod = 'Validate' . ucfirst($key);
+            try {
+                if ($this->$classMethod($value)) {
+                    $this->$key = $value;
+                }
+            } catch (validationErrors $e) {
+                $errorCollections->addError($e);
+            }
+        }
+        if(count($errorCollections)>0) return $errorCollections->getErrors();
+        return true;
     }
 }

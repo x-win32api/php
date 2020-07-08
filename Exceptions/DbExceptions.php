@@ -6,27 +6,21 @@ use Exception;
 
 class DbExceptions extends Exception
 {
-    public $data;
+    public $exceptionParamInfo;
     // Переопределим исключение так, что параметр message станет обязательным
-    public function __construct($message, $code = 0, $data = '')
+    public function __construct($message, $code = 0, $exceptionParamInfo = '')
     {
-        $this->data = $data;
-        // некоторый код
+        $this->exceptionParamInfo = $exceptionParamInfo;
+        // некоторый код которым расширим принимаемые данные об ошибке
 
-        // убедитесь, что все передаваемые параметры верны
+        // базовый конструктор
         parent::__construct($message,$code);
     }
 
     // Переопределим строковое представление объекта.
     public function __toString()
     {
-
-        return __CLASS__ . " : [{$this->code}] : {$this->message}\nСтрока: {$this->data}\n{$this->getTraceAsString()}";
-    }
-
-    public function customFunction()
-    {
-        echo "Мы можем определять новые методы в наследуемом классе\n";
+        return __CLASS__ . " : [{$this->code}] : {$this->message}\nСтрока: {$this->exceptionParamInfo}\n{$this->getTraceAsString()}";
     }
 
 }

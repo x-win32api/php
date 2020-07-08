@@ -1,8 +1,10 @@
 <?php
 
+include __DIR__.'/vendor/autoload.php';
+
 function loadClass($classname)
 {
-    $filename = str_replace('\\', '/', $classname) . '.php';
+    $filename = str_replace('\\', '/', __DIR__.'/'.$classname) . '.php';
     if (file_exists($filename)) {
         include($filename);
     }

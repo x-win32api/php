@@ -4,6 +4,8 @@
     <include_path>
       <path value="$PROJECT_DIR$/../../modules/php/PHP_7.3-x64" />
       <path value="$PROJECT_DIR$/../../modules/php/PHP_7.3-x64/PEAR/pear" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

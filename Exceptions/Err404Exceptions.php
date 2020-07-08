@@ -21,9 +21,4 @@ class Err404Exceptions extends Exception
         return __CLASS__ . " : [{$this->code}] : {$this->message}\nСтрока: {$this->data}\n{$this->getTraceAsString()}";
     }
 
-    public function customFunction()
-    {
-        echo "Мы можем определять новые методы в наследуемом классе\n";
-    }
-
 }
