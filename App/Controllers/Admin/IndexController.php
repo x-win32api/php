@@ -4,10 +4,10 @@
 namespace App\Controllers\Admin;
 
 
-use App\Controllers\BaseControllers;
+use App\Controllers\BaseController;
 use App\Models\News;
 
-class IndexController extends BaseControllers
+class IndexController extends BaseController
 {
 
 
@@ -17,7 +17,7 @@ class IndexController extends BaseControllers
             die("Доступ закрыт!");
         }
         $this->views->lastNews = News::getAll();
-        print $this->views->render(__DIR__ . '/../../Views/v_admin_index.php');
+        echo $this->views->render(__DIR__ . '/../../Views/v_admin_index.php');
 
 
     }

@@ -5,6 +5,13 @@ use Exceptions\DbExceptions;
 
 include 'autoload.php';
 
+
+$x = false;
+if(empty($x)){ print '100'; } else { echo 200;}
+
+
+
+
 $exc = new DbExceptions('Ошибка при выполнении запроса ', 0, 'Разная информация');
 $test = new Logger($exc);
 $test->info('Определенный текст');

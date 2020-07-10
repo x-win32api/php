@@ -5,20 +5,16 @@ namespace App\Controllers;
 use App\Models\News;
 use Exceptions\Err404Exceptions;
 
-class ArticleController extends BaseControllers
+class ArticleController extends BaseController
 {
 
     public function __invoke()
     {
-        if (!$this->access()) { die("Доступ закрыт!"); }
-
             $article = (isset($_GET['id'])) ? News::findById((int)$_GET['id']) : false;
 
-            if ($article) {
-
+            if (empty($article)) {
                 $this->views->news = $article;
-                print $this->views->render(__DIR__ . '/../Views/v_news.php');
-
+                echo $this->views->render(__DIR__ . '/../Views/v_news.php');
             } else {
                 throw new Err404Exceptions("Ошибка 404 страница не найдена!", '1', 'ID СТРАНИЦЫ: '.$_GET['id']);
             }

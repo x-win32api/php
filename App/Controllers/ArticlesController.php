@@ -4,15 +4,13 @@ namespace App\Controllers;
 
 use App\Models\News;
 
-class ArticlesController extends BaseControllers
+class ArticlesController extends BaseController
 {
 
     public function __invoke()
     {
-        if (!$this->access()) { die("Доступ закрыт!"); }
-
         $this->views->lastNews = News::getAll();
-        print $this->views->render(__DIR__ . '/../Views/v_allNews.php');
+        echo $this->views->render(__DIR__ . '/../Views/v_allNews.php');
 
     }
 

@@ -18,7 +18,8 @@ if (!class_exists($class)) {
 }
 try {
     $controller = new $class;
-    $controller();
+    $controller->action();
+
 } catch (DbExceptions $e) {
     $log = new Logger($e);
     $log->warning("Ошибка соеденения");

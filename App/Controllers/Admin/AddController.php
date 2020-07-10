@@ -3,42 +3,34 @@
 
 namespace App\Controllers\Admin;
 
-use App\Controllers\BaseControllers;
+use App\Controllers\BaseController;
 use App\Models\Author;
 use App\Models\News;
 
-class AddController extends BaseControllers
+class AddController extends BaseController
 {
-
     public function __invoke()
     {
-        if (!$this->access()) {
-            die("Доступ закрыт!");
-        }
-
         if (isset($_POST['form_control'])) {
-
             $news = new News();
             $validate = $news->fill($_POST);
             if ($validate === true) {
                 if ($news->save()) {
                     header('Location: ./index.php?ctrl=edit&id=' . $news->id);
-                   exit();
-                }else { print 'Сейв не отработал'; var_dump($news);}
+                    exit();
+                } else {
+                    print 'Ошибка сохранения';
+                }
             } else {
                 $this->views->author = Author::getAll();
                 $this->views->errors = $validate;
-                print $this->views->render(__DIR__ . '/../../Views/v_edit_news.php');
+                echo $this->views->render(__DIR__ . '/../../Views/v_edit_news.php');
             }
 
-
         } else {
-             $this->views->author = Author::getAll();
-            //     $this->views->errors = array();
-            print $this->views->render(__DIR__ . '/../../Views/v_edit_news.php');
+            $this->views->author = Author::getAll();
+            echo $this->views->render(__DIR__ . '/../../Views/v_edit_news.php');
 
         }
-
     }
-
 }

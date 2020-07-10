@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class ErrorsController extends BaseControllers
+class ErrorsController extends BaseController
 {
     public $errorMassenge;
 
@@ -14,14 +14,10 @@ class ErrorsController extends BaseControllers
 
     public function __invoke()
     {
-        if (!$this->access()) {
-            die("Доступ закрыт!");
-        }
-
         $this->views->title = 'Возникла ошибка!';
         $this->views->content = $this->errorMassenge;
 
-        print $this->views->render(__DIR__ . '/../Views/v_errors.php');
+        echo $this->views->render(__DIR__ . '/../Views/v_errors.php');
 
     }
 }
