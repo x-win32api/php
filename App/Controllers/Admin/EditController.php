@@ -16,7 +16,7 @@ class EditController extends BaseController
     {
             $news = (isset($_GET['id'])) ? News::findById((int)$_GET['id']) : false;
 
-        if (empty($news)) {
+        if (!empty($news)) {
 
             if (isset($_POST['form_control'])) {
 

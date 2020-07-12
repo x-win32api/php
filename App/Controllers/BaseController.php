@@ -17,6 +17,7 @@ abstract class BaseController
     public function action()
     {
         if ($this->access()) {
+
             $this->__invoke();
         } else {
             die('Доступ запрещен!');

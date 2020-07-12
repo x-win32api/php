@@ -1,0 +1,392 @@
+
+[2020-07-10 19:23] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 9
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:24] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 9
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:24] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 9
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:24] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 9
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:24] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 9
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:27] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(25): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:29] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:30] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:31] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:32] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:32] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:32] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:32] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:33] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:34] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(27): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:34] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(20): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(27): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}
+
+[2020-07-10 19:35] 
+Level - alert
+Message - Exceptions\Err404Exceptions : [1] : Ошибка 404 страница не найдена!
+Строка: ID СТРАНИЦЫ: 6
+#0 W:\domains\php.loc\App\Controllers\BaseController.php(21): App\Controllers\ArticleController->__invoke()
+#1 W:\domains\php.loc\index.php(26): App\Controllers\BaseController->action()
+#2 {main}

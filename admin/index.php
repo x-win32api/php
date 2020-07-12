@@ -7,7 +7,7 @@ $class = 'App\\Controllers\\Admin\\' . $ctrl . 'Controller';
 
 if (class_exists($class)) {
     $controller = new $class;
-    $controller();
+    $controller->action();
 } else {
     die('Неизвестная страница?');
 }

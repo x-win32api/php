@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class err404Controller extends BaseController
+class Err404Controller extends BaseController
 {
     public $errorMassenge;
 
